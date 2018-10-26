@@ -10,10 +10,7 @@ Requires Kanboard ^1.2.6
 - Task colors is shown under view switcher in task board.
 
 ## Installation
-You have the choice between 3 methods:
-
-### Install via composer (recommended)
-Execute "composer require corex/kanboard-crtask" in kanboard-path.
+You have the choice of following methods:
 
 ### Download
 Download the zip file and decompress everything under the directory `plugins/CRTask`.
