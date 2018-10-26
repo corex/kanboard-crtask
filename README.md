@@ -16,7 +16,7 @@ You have the choice between 3 methods:
 Execute "composer require corex/kanboard-crtask" in kanboard-path.
 
 ### Download
-Download the zip file and decompress everything under the directory `plugins/CRProject`.
+Download the zip file and decompress everything under the directory `plugins/CRTask`.
 
 ### Clone
-Clone this repository into the folder `plugins/CRProject`
+Clone this repository into the folder `plugins/CRTask`
