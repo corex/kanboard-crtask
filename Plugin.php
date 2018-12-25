@@ -108,6 +108,6 @@ class Plugin extends Base
      */
     public function getPluginHomepage()
     {
-        return 'https://github.com/corex/kanboard-plugin-crtask';
+        return 'https://github.com/corex/kanboard-crtask';
     }
 }
