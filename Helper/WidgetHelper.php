@@ -20,13 +20,12 @@ class WidgetHelper extends Base
         $styles = [
             'display: inline',
             'position: relative',
-            'border-radius: 6px',
             'padding: 2px 5px 2px 5px',
             'background-color: ' . $colorHelper->background($colorId),
-            'border: 1px solid ' . $colorHelper->border($colorId)
+            'border-color: ' . $colorHelper->border($colorId)
         ];
         $output = [];
-        $output[] = '<div';
+        $output[] = '<div class="task-board task-board-status-open"';
         $output[] = ' style="' . implode('; ', $styles) . '"';
         $output[] = '>';
         $output[] = $text;
