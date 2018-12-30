@@ -10,6 +10,12 @@ $request = Factory::request();
         <?= t('Task colors') ?>:
         <?php
         foreach ($colors as $colorId => $title) {
+
+            // Build url for filter.
+            $urlTemplate = '<a href="#" class="filter-helper" data-filter="color:{colorId}">{title}</a>';
+            $title = str_replace('{title}', $title, $urlTemplate);
+            $title = str_replace('{colorId}', $colorId, $title);
+
             print($widgetHelper->label($colorId, $title) . ' ');
         }
         ?>
