@@ -8,6 +8,7 @@ Requires Kanboard ^1.2.6
 - Name task colors.
 - Limit list of colors by adding names.
 - Task colors is shown under view switcher in task board.
+- Click on task color to filter on that color. Only works on status open.
 
 ## Installation
 You have the choice of following methods:

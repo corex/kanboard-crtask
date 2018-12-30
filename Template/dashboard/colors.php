@@ -12,7 +12,7 @@ $request = Factory::request();
         foreach ($colors as $colorId => $title) {
 
             // Build url for filter.
-            $urlTemplate = '<a href="#" class="filter-helper" data-filter="color:{colorId}">{title}</a>';
+            $urlTemplate = '<a href="#" class="filter-helper" data-filter="status:open color:{colorId}">{title}</a>';
             $title = str_replace('{title}', $title, $urlTemplate);
             $title = str_replace('{colorId}', $colorId, $title);
 
