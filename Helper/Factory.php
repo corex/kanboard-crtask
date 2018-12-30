@@ -2,6 +2,8 @@
 
 namespace Kanboard\Plugin\CRTask\Helper;
 
+use Kanboard\Core\Helper;
+use Kanboard\Helper\UrlHelper;
 use Kanboard\Model\ColorModel;
 use Pimple\Container;
 
@@ -16,6 +18,18 @@ class Factory
      * @var array
      */
     private static $instances;
+
+    /**
+     * Url helper.
+     *
+     * @return UrlHelper
+     * @throws \Exception
+     */
+    public static function urlHelper()
+    {
+        $containerHelper = self::containerHelper();
+        return $containerHelper->url;
+    }
 
     /**
      * Color model.
@@ -69,6 +83,18 @@ class Factory
     public static function setContainer(Container $container)
     {
         self::$container = $container;
+    }
+
+    /**
+     * Container helper.
+     *
+     * @return Helper
+     * @throws \Exception
+     */
+    private static function containerHelper()
+    {
+        $container = self::container();
+        return $container['helper'];
     }
 
     /**
