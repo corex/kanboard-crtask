@@ -102,4 +102,28 @@ class Request extends Base
         }
         return $default;
     }
+
+    /**
+     * Query value string.
+     *
+     * @param string $query
+     * @param string $default
+     * @return string
+     */
+    private function queryValueString($query, $default = null)
+    {
+        return $this->request->getStringParam($query, $default);
+    }
+
+    /**
+     * Query value int.
+     *
+     * @param string $query
+     * @param int $default
+     * @return int
+     */
+    private function queryValueInt($query, $default = 0)
+    {
+        return $this->request->getIntegerParam($query, $default);
+    }
 }
