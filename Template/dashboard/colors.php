@@ -9,6 +9,11 @@ $request = Factory::request();
     <div style="padding: 15px 5px 10px 0px;">
         <?= t('Task colors') ?>:
         <?php
+
+        $urlTemplate = '<a href="#" class="filter-helper" data-filter="status:open">{title}</a>';
+        $title = str_replace('{title}', t('Reset'), $urlTemplate);
+        print($widgetHelper->label(null, $title) . ' ');
+
         foreach ($colors as $colorId => $title) {
 
             // Build url for filter.
