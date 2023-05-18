@@ -6,7 +6,7 @@ $widgetHelper = Factory::widgetHelper();
 $request = Factory::request();
 ?>
 <?php if (in_array($request->controller(), ['BoardViewController']) && count($colors) > 0): ?>
-    <div style="padding: 15px 5px 10px 0px;">
+    <div style="position: relative; padding: 15px 5px 10px 0px; display:inline; white-space: nowrap;">
         <?= t('Task colors') ?>:
         <?php
 
